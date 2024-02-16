@@ -2,9 +2,15 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-// const { type } = require("os");
+const util = require("util");
+const { log } = require("console");
 
-const writeToFile = until.promisify(fs.writeFile);
+const writeToFile = util.promisify(fs.writeFile);
+
+const linceses = [
+    "MIT",
+    "dsada",
+]
 
 // array of questions for user
 const questions = () => 
@@ -35,30 +41,30 @@ const questions = () =>
         message: "In as much detail as possible please use this section to descibe the use case for your project.",
     },
     {
-        type: "input",
-        // is it an input? surely we dont just let a user just add a license?
+        type: "list",
         name: "license",
-        message: "",
+        message: "Please select the appropriate license.",
+        choices: linceses,
     },
     {
         type: "input",
         name: "contributing",
-        message: "Please entre all contributors",
+        message: "Please entre all contributors.",
     },
     {
         type: "input",
         name: "tests",
-        message: "Please add information on all testing methodologies used when developing this project. This can be from unit testing, system testing to intergration testing if the project isnt completely blackbox",
+        message: "Please add information on all testing methodologies used when developing this project. This can be from unit testing, system testing to intergration testing if the project isnt completely blackbox.",
     },
     {
         type: "input",
         name: "github",
-        message: "Please entre your GitHub username",
+        message: "Please entre your GitHub username.",
     },
     {
         type: "input",
         name: "linkedin",
-        message: "Please entre your LinkedIn profile URL",
+        message: "Please entre your LinkedIn profile URL.",
     },
     {
         type: "input",
@@ -69,13 +75,25 @@ const questions = () =>
 ;
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+fs.writeFile(fileName, (generateMarkdown(data)), (err) => {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("README created!")
+    }
+})
+
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then((answers) => answers 
+    ?
+    (writeToFile("README.md", answers)) 
+    :
+    console.log("Please input all questions")
+    );
 }
 
 // function call to initialize program
 init();
+
