@@ -2,10 +2,10 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-const util = require("util");
-const { log } = require("console");
+// const util = require("util");
+// const { log } = require("console");
 
-const writeToFile = util.promisify(fs.writeFile);
+// const writeToFile = util.promisify(fs.writeFile);
 
 const linceses = [
     "MIT",
