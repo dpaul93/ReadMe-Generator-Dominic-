@@ -2,18 +2,19 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-// const util = require("util");
-// const { log } = require("console");
+const util = require("util");
+const writeFileAsync = util.promisify(fs.writeFile);
 
-// const writeToFile = util.promisify(fs.writeFile);
-
-const linceses = [
+const licenses = [
     "MIT",
-    "dsada",
+    "BSL-1.0",
+    "EUPL-1.1",
+    "MS-PL",
+    "Unlicense",
 ]
 
 // array of questions for user
-const questions = () => 
+const promptUser = () => 
     inquirer.prompt([
     {
         type: "input",
@@ -27,7 +28,7 @@ const questions = () =>
     },
     {
         type: "input",
-        name: "contense",
+        name: "contents",
         message: "Please create a table of contense for your project."
     },
     {
@@ -44,7 +45,7 @@ const questions = () =>
         type: "list",
         name: "license",
         message: "Please select the appropriate license.",
-        choices: linceses,
+        choices: licenses,
     },
     {
         type: "input",
@@ -74,26 +75,47 @@ const questions = () =>
     ])
 ;
 
+promptUser ()
+.then((answers) => writeFileAsync("README.md", generateMarkdown(answers)))
+.then(() => console.log("README file Created"))
+.catch((err) => console.log(err));
+
+
+
 // function to write README file
-fs.writeFile(fileName, (generateMarkdown(data)), (err) => {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("README created!")
-    }
-})
+// fs.writeFile("README.md", (generateMarkdown(data)), (err) => {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log("README created!")
+//     }
+// })
 
 
 // function to initialize program
-function init() {
-    inquirer.prompt(questions).then((answers) => answers 
-    ?
-    (writeToFile("README.md", answers)) 
-    :
-    console.log("Please input all questions")
-    );
-}
+
+// function init() {
+//     inquirer.prompt(questions).then((data) => {
+//         fs.writeFile("README.md", generateMarkdown(data), (err) => {
+//             if (err) {
+//                 console.error(err);
+//             } else {
+//                 console.log("README created!");
+//             }
+//         });
+//     });
+// }
+
+
+// function init() {
+//     inquirer.prompt(questions).then((response) => response 
+//     ?
+//     (writeToFile("README.md", response)) 
+//     :
+//     console.log("Please input all questions")
+//     );
+// }
 
 // function call to initialize program
-init();
+// init();
 
