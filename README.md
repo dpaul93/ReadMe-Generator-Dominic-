@@ -1,7 +1,7 @@
 
 
-  # TEST
-  [![Lincese: Unlicense](https://img.shields.io/badge/License-Unlicense-yellow.svg)](https://opensource.org/licenses/Unlicense)
+  # Readme Generator 
+  [![Lincese: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   <!-- Table Of Contents -->
   <section>
@@ -15,42 +15,41 @@
   <li><a href="#license">License</a></li>
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#tests">Tests</a></li>
-  </ol>
-  </section>
+  <section/>
 
-  #title
+  ##Title
 
-  TEST
+  Readme Generator 
 
   ##Description
 
-  This is a short test
+  This is a short readme generator created using npm and node packages
 
   ##Contents
 
-  WRONG
+  no
 
   ##Installation
 
-  Step 1, step 2 step 3
+  1,2,3,4,45,5,6
 
   ##Usage
 
-  THIS IS DESIGNED TO BE A TEST 
+  A simple way for a user to create a readme 
 
   ##License
 
-  Unlicense
+  MIT
 
   ##Contributing
 
-  ME 
+  Dominic Paul
 
   ##Tests
 
-  system
+  System testing 
 
   ##Contact
 
-  If you would like to visit my repository or browse my other projects. You can find my GitHub Profile: [github.com/dpaul93] LinkedIn: at undefined or by email at dp@gmail.com
+  If you would like to visit my repository or browse my other projects. You can find my GitHub Profile: [github.com/dpaul93] LinkedIn: at undefined or by email at dominicepaul@gmail.com
   

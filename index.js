@@ -14,7 +14,7 @@ const licenses = [
 ]
 
 // array of questions for user
-const promptUser = () => 
+const questions = () => 
     inquirer.prompt([
     {
         type: "input",
@@ -75,7 +75,7 @@ const promptUser = () =>
     ])
 ;
 
-promptUser ()
+questions ()
 .then((answers) => writeFileAsync("README.md", generateMarkdown(answers)))
 .then(() => console.log("README file Created"))
 .catch((err) => console.log(err));
