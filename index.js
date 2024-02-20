@@ -24,7 +24,7 @@ const questions = () =>
     { 
         type: "input",
         name: "description",
-        message: "Please describe your your project is. A short paragraph explaining the use case and how you came about creating it.",
+        message: "Please describe your your project is. A short paragraph explaining why it was created.",
     },
     {
         type: "input",
@@ -71,46 +71,6 @@ const questions = () =>
 ;
 
 questions ()
-.then((answers) => writeFileAsync("README.md", generateMarkdown(answers)))
+.then((answers) => writeFileAsync("./utils/readmeGenerated/README.md", generateMarkdown(answers)))
 .then(() => console.log("README file Created"))
 .catch((err) => console.log(err));
-
-
-
-// function to write README file
-// fs.writeFile("README.md", (generateMarkdown(data)), (err) => {
-//     if (err) {
-//         console.log(err);
-//     } else {
-//         console.log("README created!")
-//     }
-// })
-
-
-// function to initialize program
-
-// function init() {
-//     inquirer.prompt(questions).then((data) => {
-//         fs.writeFile("README.md", generateMarkdown(data), (err) => {
-//             if (err) {
-//                 console.error(err);
-//             } else {
-//                 console.log("README created!");
-//             }
-//         });
-//     });
-// }
-
-
-// function init() {
-//     inquirer.prompt(questions).then((response) => response 
-//     ?
-//     (writeToFile("README.md", response)) 
-//     :
-//     console.log("Please input all questions")
-//     );
-// }
-
-// function call to initialize program
-// init();
-

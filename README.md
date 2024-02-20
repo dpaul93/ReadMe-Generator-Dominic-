@@ -1,60 +1,49 @@
+This is a ReadMe Generator. 
 
+With this task I utilised the inquirer package via NPM and node.js. 
 
-  # Readme
-  [![Lincese: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  
-  <!-- Table Of Contents -->
-  <section>
-  <summary> Table Of Contents</summary>
-  <ol>
-  <li><a href="#title">Title</a></li>
-  <li><a href="#description">Description</a></li>
-  <li><a href="#installation">Installation</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#license">License</a></li>
-  <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#tests">Tests</a></li>
-  <section/>
+The task satifies all of the below which is from the acceptance criteria.
 
-  ##Description
+Create a command-line application that accepts user input.
 
-  This is a ReadMe
+When a user is prompted for information about the application repository, a high-quality, professional README.md is generated with:
 
-  ##Contents
+The title of my project
 
-  undefined
+Sections entitled:
 
-  ##Installation
+Description
 
-  Step 1, step 2, step 3.
+Table of Contents
 
-  ##Usage
+Installation
 
-  This is a simple readme to a user can simply and easily populate
+Usage
 
-  ##License
+License
 
-  MIT
+Contributing
 
-  ##Contributing
+Tests
 
-  Dominic Paul
+Questions
 
-  ##Tests
+When a user enters the project title, it's displayed as the title of the README.
 
-  System testing 
+When a user enters a description, installation instructions, usage information, contribution guidelines, and test instructions, this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests.
 
-  ##Contact
+When a user chooses a license for their application from a list of options, a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under.
 
-  #GitHub
+When a user enters their GitHub username, it's added to the section of the README entitled Questions, with a link to their GitHub profile.
 
-  If you would like to visit my repository or browse my other projects. You can find my GitHub Profile: [https://www.github.com/dpaul93] 
-  
-  #LinkedIn
-  
-  LinkedIn: [https://www.linkedin.com/in/undefined]
-  
-  #Email
+When a user enters their email address, it's added to the section of the README entitled Questions, with instructions on how to reach them with additional questions.
 
-  Email at dominicepaul@gmail.com
-  
+When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+Link to the Demo: https://www.loom.com/share/fa85e250677d4e82b5dad8c295eb0e10?sid=a07d1b7b-70fb-49e8-868e-3b75dd914ab3
+
+Link to my GitHub Repo: https://github.com/dpaul93/ReadMe-Generator-Dominic-

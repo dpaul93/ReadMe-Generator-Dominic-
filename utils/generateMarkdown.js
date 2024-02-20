@@ -17,15 +17,11 @@ function generateMarkdown(answers) {
   <li><a href="#license">License</a></li>
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#tests">Tests</a></li>
-  <section/>
+  </section>
 
   ##Description
 
   ${answers.description}
-
-  ##Contents
-
-  ${answers.contents}
 
   ##Installation
 
