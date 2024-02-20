@@ -26,11 +26,11 @@ const questions = () =>
         name: "description",
         message: "Please describe your your project is. A short paragraph explaining the use case and how you came about creating it.",
     },
-    {
-        type: "input",
-        name: "contents",
-        message: "Please create a table of contense for your project."
-    },
+    // {
+    //     type: "input",
+    //     name: "contents",
+    //     message: "Please create a table of contense for your project."
+    // },
     {
         type: "input",
         name: "installation",

@@ -12,17 +12,12 @@ function generateMarkdown(answers) {
   <ol>
   <li><a href="#title">Title</a></li>
   <li><a href="#description">Description</a></li>
-  <li><a href="#contents">contents</a></li>
   <li><a href="#installation">Installation</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#license">License</a></li>
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#tests">Tests</a></li>
   <section/>
-
-  ##Title
-
-  ${answers.title}
 
   ##Description
 
@@ -54,7 +49,17 @@ function generateMarkdown(answers) {
 
   ##Contact
 
-  If you would like to visit my repository or browse my other projects. You can find my GitHub Profile: [github.com/${answers.github}] LinkedIn: at ${answers.Linkedin} or by email at ${answers.email}
+  #GitHub
+
+  If you would like to visit my repository or browse my other projects. You can find my GitHub Profile: [https://www.github.com/${answers.github}] 
+  
+  #LinkedIn
+  
+  LinkedIn: [https://www.linkedin.com/in/${answers.linkedin}]
+  
+  #Email
+
+  Email at ${answers.email}
   
 `;
 }

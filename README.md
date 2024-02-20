@@ -1,6 +1,6 @@
 
 
-  # Readme Generator 
+  # Readme
   [![Lincese: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   <!-- Table Of Contents -->
@@ -9,7 +9,6 @@
   <ol>
   <li><a href="#title">Title</a></li>
   <li><a href="#description">Description</a></li>
-  <li><a href="#contents">contents</a></li>
   <li><a href="#installation">Installation</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#license">License</a></li>
@@ -17,25 +16,21 @@
   <li><a href="#tests">Tests</a></li>
   <section/>
 
-  ##Title
-
-  Readme Generator 
-
   ##Description
 
-  This is a short readme generator created using npm and node packages
+  This is a ReadMe
 
   ##Contents
 
-  no
+  undefined
 
   ##Installation
 
-  1,2,3,4,45,5,6
+  Step 1, step 2, step 3.
 
   ##Usage
 
-  A simple way for a user to create a readme 
+  This is a simple readme to a user can simply and easily populate
 
   ##License
 
@@ -51,5 +46,15 @@
 
   ##Contact
 
-  If you would like to visit my repository or browse my other projects. You can find my GitHub Profile: [github.com/dpaul93] LinkedIn: at undefined or by email at dominicepaul@gmail.com
+  #GitHub
+
+  If you would like to visit my repository or browse my other projects. You can find my GitHub Profile: [https://www.github.com/dpaul93] 
+  
+  #LinkedIn
+  
+  LinkedIn: [https://www.linkedin.com/in/undefined]
+  
+  #Email
+
+  Email at dominicepaul@gmail.com
   
